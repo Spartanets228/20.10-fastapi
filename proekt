@@ -1,0 +1,10 @@
+<название проекта>
+	папка templates(html)
+		login.html(доступна всем)
+		main.html(только авторизованным)
+	папка static(css)
+	папка venv +-
+	папка sources(картинки, аудио, видео)
+	requarements.txt(зависимости)
+	main.py(само приложение)
+	user.csv(базозаменитель)
