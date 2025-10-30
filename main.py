@@ -1,6 +1,3 @@
-#Все неправильные адреса - 404 
-#Автообновление сессии(примерно 3 минуты бездействия) 
-#В куки записывать кроме сессии еще и user_name, role 
 #Поднять https
 
 import hashlib
@@ -20,7 +17,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
-USERS = "users.csv"
+USERS = "users.csv"     
 SESSION_TTL = timedelta(minutes=3)
 sessions = {}
 white_urls = ["/", "/login", "/logout"]
